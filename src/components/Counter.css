@@ -1,6 +1,20 @@
-.counter {
-  display: inline-block;
-  padding: 16px;
+div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+button {
   background: teal;
   color: white;
+  flex: 1;
+  text-align: center;
+}
+.counter {
+  width: 8rem;
+  aspect-ratio: 1;
+  font-size: 4rem;
+  margin: 0 4rem;
+}
+span {
+  font-size: 4rem;
 }
