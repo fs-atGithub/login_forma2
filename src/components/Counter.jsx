@@ -6,9 +6,21 @@ export function Counter() {
   const counter = counterState[0];
   const setCounter = counterState[1];
 
-  const handleClick = () => {
+  const plus = () => {
     setCounter((state) => ++state);
-  }
-
-  return <button className="counter" onClick={handleClick}>{counter}</button>;
+  };
+  const minus = () => {
+    setCounter((state) => --state);
+  };
+  return (
+    <div>
+      <button className="counter" onClick={minus}>
+        {counter}
+      </button>
+      <span>{counter}</span>
+      <button className="counter" onClick={plus}>
+        {counter}
+      </button>
+    </div>
+  );
 }
